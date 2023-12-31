@@ -1,19 +1,18 @@
-# Módulo 3 - Trilha HTML
+# Wikijão
 
-**Título:** Recriando Wikipedia, com um layout melhor :)
+## Descrição
+Projeto desenvolvido para o último desafio da Formação HTML da DIO , a proposta era construir uma página semelhante a uma aba da Wikipedia
 
-## Objetivo
-Este desafio consiste em treinar você com relação a estrutura do site, e também aplicar conhecimentos adiquiridos sobre semântica e acessibilidade.
+## Tecnologias
+- Html
+- Css
+- Bootstrap
 
-## Desafio
-Neste repositório tem uma estrutura básica já pré-montada de um layout simples com um pouco de CSS aplicado. Apenas para deixar mais apresentável.
+![](assets/images/photo1.jpeg)
 
-Fiquem a vontade para criar da forma que desejarem, e sobre os temas que quiserem. O intuito aqui é divertir, e ao mesmo tempo aprender com o desafio.
+## Design Responsivo
+Procuro sempre desenvolver um design responsivo mesmo em pequenos projetos
 
-Sigam as intruções da chamada do vídeo. Acredito que por lá, ficará mais fácil de entenderem como proceder.
-
-## Links úteis
-- [Download do NVDA](https://www.nvaccess.org/download/)
-- [Wikipedia](https://pt.wikipedia.org/)
-
-
+### Mobile
+![](assets/images/photo2.jpeg)
+![](assets/images/photo3.jpeg)

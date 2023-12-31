@@ -1,44 +1,605 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <div>   
-        <div class="logo">
-            <img src="assets/images/logo.png" width="200"/>
-        </div>
-    </div>
+    <!-- bootStrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
 
-    <div class="bar"></div>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/global.css" />
 
-    <div class="content">
-        <div class="sidebar">
-            <h2>Título</h2>
-            <ul>
-                <li><a href="#">Links</a></li>
+    <link
+      rel="shortcut icon"
+      href="assets/images/favcon.png"
+      type="image/x-icon"
+    />
+    <title>Chevrolet - Wikijao</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <img src="assets/images/logo.png" alt="Logo Wikijao" class="logo" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Criar uma conta</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Entrar</a>
+              </li>
             </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="dropdown">
+      <div class="dropdown-left">
+        <button
+          class="btn dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <img src="assets/images/svg/menu.svg" alt="" />
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+
+      <div class="dropdown-right">
+        <button
+          class="btn dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <img src="assets/images/svg/menu-points.svg" alt="" />
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container-fluid content">
+      <aside>
+        <div class="navigation">
+          <span>Conteúdo <button>ocultar</button></span>
+          <a href="" class="navigationLink">História</a
+          ><a href="" class="navigationLink">Chevrolet no Brasil</a
+          ><a href="" class="navigationLink">Referências</a
+          ><a href="" class="navigationLink">Ligações externas</a>
+        </div>
+      </aside>
+
+      <main>
+        <h1>Chevrolet</h1>
+        <div class="contentSummary">
+          <div>
+            <a href="#">Artigo</a>
+            <a href="#">Discussão</a>
+          </div>
+          <div>
+            <a href="#" id="readLink">Ler</a>
+            <a href="#">Editar</a>
+            <a href="#">Editar código-font</a>
+            <a href="#">Ver Histórico</a>
+            <a href="#" id="toolsLink">Ferramentas</a>
+          </div>
         </div>
 
-        <div class="main">
-            
+        <p id="origin">Origem: WikiJão, a enciclopédia livre.</p>
+
+        <div class="container intro">
+          <p class="textContent">
+            <span id="themeContent">Chevrolet</span> (conhecida também pela
+            abreviação "Chevy") é um fabricante de veículos motorizados
+            norte-americano fundado em 1911 por Louis Chevrolet e que pertence à
+            General Motors (GM) juntamente com Cadillac, Buick e GMC,[4] além de
+            serem antigos proprietários das marcas Opel (1929–2017)[5] e
+            Vauxhall (1925–2017),[5] voltadas para o mercado Europeu e das
+            extintas Holden na Austrália e Pontiac.[6][7][8][9] Atualmente,
+            fabrica no Brasil os modelos S10,[10] Trailblazer,[10] Tracker,[11]
+            Spin,[12] Onix e Onix Plus,[13][14][15][16] tendo ultrapassado a
+            marca de 17 milhões de unidades produzidas ao longo de 96 anos no
+            país.[17][18][19]
+          </p>
+          <div>
+            <img
+              class="img-fluid"
+              src="assets/images/chvrolet-logo.jpg"
+              alt="Logo Chevrolet"
+            />
+          </div>
         </div>
 
-        <div class="anchors">
-            <h2>Neste Artigo</h2>
+        <hr />
+
+        <div class="container history">
+          <h2>História</h2>
+          <div class="historyStart">
+            <div class="historyStartImg">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/1919_Tacoma_Speedway_Louis_Chevrolet_Marvin_D_Boland_Collection_BOLANDB2009.jpg/1200px-1919_Tacoma_Speedway_Louis_Chevrolet_Marvin_D_Boland_Collection_BOLANDB2009.jpg"
+                alt="Louis Chevrolet"
+              />
+              <span id="photoDetail">Louis Chevrolet.</span>
+            </div>
+            <div class="historyStartText">
+              <p>
+                Em 3 de novembro de 1911, o piloto de corridas de carro e
+                engenheiro de automóveis, Louis Chevrolet co-fundou a Chevrolet
+                Motor Car Company, com William C. Durant (fundador da General
+                Motors, deposto por 5 anos) e os parceiros de investimento,
+                William Little (fabricante do automóvel Little), Edwin R.
+                Campbell (genro de Durant) e, em 1912, R.S. McLaughlin, do
+                Canadá.
+              </p>
+              <p>
+                Durant foi afastado da gestão da General Motors (companhia que
+                fundara em 1908), em 1910, por 5 anos. Ele assumiu o Works Flint
+                Wagon, incorporando a Mason e empresas Little. Como chefe da
+                Buick Motor Company, antes de fundar a GM, Durant tinha
+                contratado Louis Chevrolet, para conduzir Buicks, em corridas
+                promocionais. Durant planejava usar a reputação da Chevrolet
+                como um piloto com a criação, para sua empresa, de um automóvel
+                novo
+              </p>
+              <p>
+                Trabalho de projeto foi em primeiro lugar, a Série C, o Six, foi
+                elaborado por Etienne Planche, seguindo as instruções de Louis.
+                O protótipo C ficou pronto, no primeiro mês, antes de a
+                Chevrolet ser realmente incorporada.
+              </p>
+            </div>
+          </div>
+          <p>
+            Chevrolet usou pela primeira vez o "emblema laço de borboleta". Logo
+            em 1913, pesquisas mais recentes do historiador Ken Kaufmann,
+            apresenta um caso que o logotipo é baseado num logotipo para
+            "Coalettes". Outros afirmam que o projeto era uma cruz estilizada
+            suíça, em homenagem à terra natal dos pais de Chevrolet.
+          </p>
+          <p>
+            Louis Chevrolet tinha diferenças com Durant, sobre o projeto e, em
+            1915, vendeu a Durant a sua participação na empresa. Em 1916, a
+            Chevrolet foi rentável o suficiente para permitir a Durant
+            "recomprar" uma participação maioritária na General Motors. Depois
+            de o negócio ser concluído, em 1917, Durant tornou-se presidente da
+            General Motors, Chevrolet, e foi incorporada pela GM como uma
+            divisão separada. Em 1917, as fábricas da Chevrolet foram
+            localizados em Nova York e Michigan, principalmente. Em 1918, ano do
+            modelo, a Chevrolet introduziu o modelo D, um modelo de motor V8, de
+            quatro passageiros e os modelos roadster, de cinco passageiros,
+            modelos "touring". Ele também iniciou a produção de uma válvula de
+            sobrecarga na linha Six. A maioria dos carros da época tinham apenas
+            motores de baixa compressão, cabeçote baixo. Estes carros tinham
+            motor 2.9 "³ (2.883 cm³), 55 cv (41 kW), motores com carburadores
+            Zenith e câmbio de três marchas.
+          </p>
+          <div class="format">
+            <p>
+              A Chevrolet continuou, em 1920, 1930 e 1940, a competir com a
+              Ford, e depois com a Chrysler Corporation, em 1928, quando
+              incorporou a Plymoutyh. Ford, Chevrolet e Chrysler eram conhecidos
+              como "as três grandes". Em 1933, a Chevrolet anunciou que, nos
+              Estados Unidos, vendia o mais barato carro de seis cilindros à
+              venda.
+              <br />
+              <br />
+              Chevrolet teve uma grande influência no mercado automóvel
+              americano, durante os anos de 1950 e 1960. Em 1953, ele produziu o
+              Corvette, um carro de dois lugares desportivo, com um corpo de
+              fibra de vidro. Em 1957, a Chevrolet apresentou o seu motor de
+              combustível injetado, em primeiro lugar, a opção "Ramjet
+              Rochester", no Corvette e em carros de passageiros, que custava
+              US$ 484. Em 1960, introduziu o Corvair, com um montado na parte
+              traseira do motor refrigerado a ar. Em 1963, um em cada dez carros
+              vendidos nos Estados Unidos era um Chevrolet.
+            </p>
+            <img
+              src="assets/images/chevy-belAir-57.avif"
+              class="img-fluid"
+              alt="Chevrolet Bel Air 1957"
+              style="
+                max-width: 500px;
+                margin: 2rem 0 2rem 2rem;
+                border: 1px solid #b8b8b8;
+                padding: 0.5rem;
+              "
+            />
+          </div>
+          <p>
+            O design básico motor V8 tem permanecido em produção contínua, desde
+            a sua estreia, em 1955, há mais tempo do que qualquer motor
+            produzido em massa no mundo, embora, as versões atuais partilhem
+            poucas se algumas partes e peças intercambiáveis, ​​com o original.
+            As variantes do pequeno bloco básico, OHV V8, sobre a plataforma de
+            design, em produção hoje, foram já muito modificadas, com avanços
+            como o bloco de alumínio e cabeças, gestão eletrónica do motor e
+            injeção de combustível sequencial. Dependendo do tipo de veículo, o
+            V8 são construídos em diversas capacidade (ex: 4,3 a 9,4 litros) com
+            potências (de 111.394 a 994 CV), conforme a instalação na fábrica. O
+            projeto do motor também tem sido utilizado, ao longo dos anos, em
+            produtos GM, construído e vendido sob as marcas Pontiac, Oldsmobile,
+            Buick, Hummer, Opel (Alemanha), e Holden (Austrália).
+          </p>
+          <p>
+            Atualmente,[quando?] a Chevrolet lançou o Chevrolet Volt/Opel
+            Ampera, para adicionar a uma grande variedade de veículos, que, em
+            2010, incluiu um misto variado de projetos americanos, australianos,
+            europeus e coreanos baseados de acordo com cada mercado local. Em
+            agosto de 2014, assinou contrato com a Confederação Brasileira de
+            Futebol (CBF), para patrocinar a Seleção Brasileira Masculina e
+            Feminina de Futebol.[20]
+          </p>
+        </div>
+
+        <div class="container brazil">
+          <h2>Chevrolet no Brasil</h2>
+
+          <div class="brazilIntro">
             <ul>
-                <li><a href="#">Âncoras</a></li>
+              <li>Em 1925, é fundada a General Motors Brasil, em São Paulo.</li>
+              <li>
+                Em 1925, é inaugurada por Felício Vigorito na cidade de
+                Capivari-SP a primeira concessionária Chevrolet. A Vigorito hoje
+                além da primeira concessionária o Grupo Vigorito se tornou um
+                dos maiores grupos de concessionárias do Brasil.
+              </li>
+              <li>Em 1964, é lançada a Veraneio.</li>
+              <li>
+                No ano de 1968, anunciou oficialmente o projeto do seu primeiro
+                carro de passeio, o Opala.
+              </li>
+              <li>
+                Em 1973, é lançado o Chevette, em 1993. O modelo sai de linha e
+                no lugar entra o Corsa.
+              </li>
+              <li>
+                Em 1982, é lançado o Monza, em 1996 o modelo é descontinuado,
+                sendo assim, o substituto oficial nas vendas da marca no Brasil
+                é o Vectra.
+              </li>
+              <li>
+                Em 1985, foi lançada a Série 20, com as pick-up's, A20, C20 e
+                D20, para substituir a ultrapassada Série 10, e reforçar a
+                concorrência com a Série F da Ford.
+              </li>
+              <li>Em 1989, se encerra a produção da Marajó.</li>
+              <li>
+                Em 1989, foi feito um face-lift no modelo Veraneio juntamente
+                com a Bonanza, para seguir o mesmo padrão da carroceria da Série
+                20.
+              </li>
+              <li>Em 1989, foi lançado o Kadett, substituto do Monza Hatch.</li>
+              <li>
+                Em 1990, é lançado o Ipanema, uma Station Wagon derivada do
+                Kadett.
+              </li>
+              <li>
+                Em 1992, são lançados no Brasil o Omega (para substituir o
+                Opala) e em 1993 o Vectra (que em 1996 é substituto oficial do
+                Monza).
+              </li>
+              <li>
+                Em 1993, é lançado o Astra que era importado da Bélgica, e em
+                1998 o modelo é fabricado no Brasil.
+              </li>
+              <li>Em 1994, a Veraneio é finalmente descontinuada.</li>
+              <li>
+                Em 1994, lançou o Chevrolet Corsa, sendo assim, o modelo foi
+                substituto do Chevette. O Corsa foi uma revolução entre os
+                hatches populares no país.
+              </li>
+              <li>Em 1995, é lançada a linha S-10 e Blazer.</li>
+              <li>
+                Em 1995, encerra-se a linha Chevette com a descontinuidade da
+                fabricação da Chevy 500.
+              </li>
             </ul>
+
+            <img src="assets/images/chevy-onix.png" alt="" />
+          </div>
+
+          <ul>
+            <li>
+              Em 1997, a Série 20 é descontinuada, e no lugar entra a Silverado,
+              que logo mais também seria interrompida as suas vendas.
+            </li>
+            <li>
+              Em meados de 1998 e 1999, o Brasil para de importar o Tigra e o
+              Calibra, devido a desvalorização do real.
+            </li>
+            <li>
+              Em 2000, lançou o Chevrolet Celta, para ser o carro mais barato do
+              Brasil, e se situar abaixo do Corsa.
+            </li>
+            <li>Em 2001, é lançado a Zafira.</li>
+            <li>
+              No ano de 2004, a Chevrolet Brasil foi líder de vendas de
+              automóveis e comerciais leves.
+            </li>
+            <li>
+              Em 2005, a Chevrolet investiu na remodelação do Chevrolet Vectra,
+              que passou a ser um sedã equivalente ao Opel Astra alemão. Além
+              disso, a Chevrolet completou 80 anos no país.
+            </li>
+            <li>
+              Em 2006, lançou uma reestilização do Celta e, em outubro do mesmo
+              ano, a versão sedã do carro, chamada Prisma.
+            </li>
+            <li>
+              Em 2014, o Greenpeace lançou um carro da Idade da Pedra, em uma
+              paródia aos carros produzidos no Brasil. Na campanha, o Greenpeace
+              pede à Chevrolet que produza carros mais eficientes – que emitam
+              menos gases do efeito estufa e consumam menos combustível. Além de
+              investimentos em pesquisa para carros elétricos.
+            </li>
+            <li>
+              Chevrolet Monza: eleito o carro do ano e líder em vendas de 1984 a
+              1986.
+            </li>
+            <li>
+              Chevrolet Onix: lançado em 2013, o veículo foi por 5 anos seguidos
+              o mais vendido do país, tornando a montadora líder de vendas.[22]
+            </li>
+          </ul>
+
+          <h2>Início da renovação da frota</h2>
+          <p>
+            A Chevrolet do Brasil renovou sua linha de produtos, lançando novos
+            projetos como Agile, Cruze, Cobalt, Cruze Sport6, Nova S10, Sonic,
+            Spin, Onix e TrailBlazer, a partir de um investimento de R$ 5,3
+            bilhões desde 2008.
+          </p>
+
+          <ul>
+            <li>Em 2008, lançou o Captiva.</li>
+            <li>Em outubro de 2009, lançou o Agile.</li>
+            <li>
+              Em 2010, lançou o Camaro com motor 6.2 V8 de 406 cvs, no Brasil.
+            </li>
+            <li>
+              Em dezembro de 2011, é encerrada a produção da Blazer,no Brasil.
+            </li>
+            <li>
+              Em 17 de agosto de 2011, o Astra tem sua produção encerrada no
+              Brasil.
+            </li>
+            <li>
+              Em 2011, o Corsa Sedan tem sua produção encerrada no Brasil.
+            </li>
+            <li>
+              Em 28 de junho de 2011, é encerrada a produção do Vectra e do
+              Vectra GT, no país.
+            </li>
+            <li>
+              Em setembro de 2011, a Chevrolet lançou o Cruze, no Brasil, com o
+              motor Ecotec 6 e transmissão automática de 6 velocidades.
+            </li>
+            <li>Em novembro de 2011, lançou o Cobalt, no Brasil.</li>
+            <li>
+              Em fevereiro de 2012, é lançada a nova geração da S10 com novo
+              motor 2.8 turbodiesel e câmbio automático de 6 marchas.
+            </li>
+            <li>
+              Em 2012, é lançado o Cruze Sport6 com o mesmo conjunto do Cruze.
+            </li>
+            <li>
+              Em junho de 2012, foi lançado o Sonic carrocerias hatch e sedã com
+              inédito motor 1.6 16V Flex.
+            </li>
+            <li>
+              Em julho de 2012, foi lançada a Spin, minivan de 5 a 7 lugares
+              substituindo os modelos Meriva e Zafira.
+            </li>
+            <li>
+              Em novembro de 2012, foi lançado o Onix, hatch compacto substituto
+              do Corsa.
+            </li>
+            <li>
+              Em novembro de 2012, foi lançada a TrailBlazer com o mesmo câmbio
+              e motor turbodiesel da nova geração da S10, e um inédito motor 3.6
+              V6 a gasolina.
+            </li>
+            <li>
+              Em dezembro de 2012, o Omega tem sua produção encerrada, o modelo
+              foi fabricado no Brasil entre 1992 e 1998, desde então era
+              importado da Austrália.
+            </li>
+            <li>
+              Em outubro de 2013, a GM traz novamente para o Brasil o Chevrolet
+              Tracker, totalmente reestilizado e com um visual bem moderno. O
+              SUV está disponível nas versões LT e LTZ (top de linha).
+            </li>
+            <li>Até 2014, a Chevrolet lançará 18 novos modelos no mercado.</li>
+            <li>
+              Em 2015, o sistema OnStar é lançado no Brasil primeiro na linha
+              2016 do Cruze. No mesmo ano,o Onix torna-se o carro mais vendido
+              do país por 3 meses seguidos levando a GM a liderança nas vendas
+              no ano.
+            </li>
+            <li>
+              Em 2016, os modelos Cobalt, Onix e Prisma ganharam reestilização
+              com novas frente e traseira além do sistema OnStar e a segunda
+              geração do sistema MyLink. O Cruze também foi reestilizado na
+              versão sedã. A GM termina o ano como líder de vendas no Brasil.
+            </li>
+            <li>
+              Em 2017, são lançadas as versões de entrada (Joy) e aventureira
+              (Activ) do Onix. Também ocorreram reestilizações no Cruze Hatch
+              que ganha o nome de Sport 6. S10 e Trailblazer também foram
+              reestilizados. O Tracker, também foi reestilizado com novas frente
+              e traseira além do MyLink 2 e OnStar. Também marca o inicio da
+              vinda do Equinox, para o Mercado brasileiro.
+            </li>
+          </ul>
         </div>
-    </div>
 
-    <div class="footer">
+        <div class="container">
+          <h2>Referências</h2>
+          <hr>
+          <div class="references">
+            <p>
+              «"Find New Roads", novo posicionamento global da marca Chevrolet,
+              chega ao Brasil». GM Media Brasil. 15 de julho de 2013. Consultado
+              em 4 de setembro de 2022
+            </p>
+            <p>
+              «GM buys Chevrolet». History Channel (em inglês). A&E Television
+              Networks. 13 de novembro de 2009. Consultado em 4 de setembro de
+              2022
+            </p>
+            <p>
+              «GM's Batey to Retire After 40 Years of Service». GM News (em
+              inglês). 28 de fevereiro de 2019. Consultado em 4 de setembro de
+              2022
+            </p>
+            <p>
+              «View the Entire Portfolio of GM Brands | General Motors». GM (em
+              inglês). Consultado em 4 de setembro de 2022
+            </p>
+            <p>
+              «Trato feito: PSA é a nova proprietária da Opel / Vauxhall».
+              Quatro Rodas. 6 de março de 2017. Consultado em 4 de setembro de
+              2022
+            </p>
+            <p>
+              «Holden: mãe do Omega australiano tem seu fim declarado pela GM».
+              Quatro Rodas. 17 de fevereiro de 2020. Abgerufen em 4 de setembro
+              de 2022
+            </p>
+            <p>
+              «GM encerra produção da Holden na Austrália; marca teve ícone
+              vendido no Brasil». Jornal do Carro - Estadão. 19 de fevereiro de
+              2020. Consultado em 4 de setembro de 2022
+            </p>
+            <p>
+              «GM anuncia o fim da marca Pontiac». VEJA. 27 de abril de 2009.
+              Consultado em 4 de setembro de 2022
+            </p>
+            <p>
+              «Americana Pontiac fecha as portas». Jornal do Carro - Estadão. 2
+              de novembro de 2010. Abgerufen em 4 de setembro de 2022
+            </p>
+            <p>
+              «GM confirma novas Chevrolet S10 e Trailblazer no Brasil até
+              2023». Jornal do Carro - Estadão. 18 de junho de 2021. Consultado
+              em 4 de setembro de 2022
+            </p>
+            <p>
+              «Um dos SUV mais vendidos do Brasil passa a ser fabricado na
+              Argentina». AutoPapo. 6 de outubro de 2022. Abgerufen em 7 de
+              outubro de 2022
+            </p>
+            <p>
+              «Chevrolet Spin completa 10 anos de Brasil e deve virar crossover
+              em breve». Jornal do Carro - Estadão. 21 de janeiro de 2022.
+              Consultado em 4 de setembro de 2022
+            </p>
 
+            <p>
+              «Chevrolet explica por que México importa Onix Plus da China e não
+              do Brasil». Motor1 Brasil. 10 de junho de 2022. Consultado em 4 de
+              setembro de 2022
+            </p>
+
+            <p>
+              «Chevrolet anuncia data para retomar produção de Onix e Onix
+              Plus». Quatro Rodas. 12 de agosto de 2022. Consultado em 4 de
+              setembro de 2022
+            </p>
+
+            <p>
+              «Fora de linha no Brasil, Chevrolet Onix Joy será fabricado na
+              Colômbia». Quatro Rodas. 26 de abril de 2022. Consultado em 4 de
+              setembro de 2022
+            </p>
+
+            <p>
+              «Fábrica da GM em Gravataí já fez Celta e agora completa 22 anos».
+              Motor1 Brasil. 21 de julho de 2022. Consultado em 4 de setembro de
+              2022
+            </p>
+
+            <p>
+              «GM alcança marca de 17 milhões de carros produzidos em 96 anos no
+              Brasil». GM Media. 26 de janeiro de 2021. Consultado em 4 de
+              setembro de 2022
+            </p>
+
+            <p>
+              «Chevrolet comemora 17 milhões de carros produzidos no Brasil».
+              Motor1 Brasil. 26 de janeiro de 2021. Consultado em 4 de setembro
+              de 2022
+            </p>
+
+            <p>
+              «Chevrolet completa 96 anos de Brasil com 17 milhões de carros
+              produzidos». iG Carros. 26 de janeiro de 2021. Consultado em 4 de
+              setembro de 2022
+            </p>
+
+            <p>
+              «GM anuncia patrocínio à Seleção Brasileira pelos próximos 5
+              anos». Consultado em 23 de setembro de 2015
+            </p>
+
+            <p>
+              Três modelos não-populares que lideraram as vendas no Brasil
+              Revista Quatro Rodas - acessado em 26 de setembro de 2021em 13 de
+              outubro de 2020
+            </p>
+          </div>
+          <p class="final">🚧🚧🚧</p>
+        </div>
+      </main>
     </div>
-</body>
+  </body>
 </html>
