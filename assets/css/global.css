@@ -158,22 +158,27 @@ h1 {
 
 .historyStart {
   display: flex;
+  justify-content: center;
 }
 
 .historyStartText {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .historyStartImg {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  margin-bottom: 2rem;
 }
 
 .historyStartImg img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 300px;
   background-color: #fff;
   padding: 0.5rem;
@@ -188,6 +193,13 @@ h1 {
 .history p {
   text-align: justify;
   font-size: 1.2em;
+}
+
+.image2 {
+  max-width: 500px;
+  margin: 2rem 0 2rem 2rem;
+  border: 1px solid #b8b8b8;
+  padding: 0.5rem;
 }
 
 .brazil {
@@ -209,6 +221,7 @@ p {
 }
 
 .brazilIntro img {
+  width: 300px;
   height: 500px;
   margin: 0 0 2rem 2rem;
   border: 1px solid #b8b8b8;
@@ -300,10 +313,10 @@ p {
     align-items: center;
     justify-content: center;
   }
-  
+
   .intro img {
-  width: 456px;
-  margin-left: 0;
+    width: 456px;
+    margin-left: 0;
   }
 
   .history div {
@@ -315,7 +328,7 @@ p {
   .format img {
     width: 300px;
   }
-  
+
   .brazilIntro {
     flex-direction: column;
     align-items: center;
@@ -325,6 +338,32 @@ p {
     width: 320px;
   }
 
+  .historyStartImg img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    background-color: #fff;
+    padding: 0.5rem;
+    margin: 0 0em 0rem 0;
+    border: 1px solid #b8b8b8;
+  }
+
+  .image2 {
+    max-width: 500px;
+    margin: 2rem 0 2rem 0rem;
+    border: 1px solid #b8b8b8;
+    padding: 0.5rem;
+  }
+
+  .brazilIntro img {
+    width: 300px;
+    height: 500px;
+    margin: 0 0 2rem 0rem;
+    border: 1px solid #b8b8b8;
+    padding: 0.5rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -400,10 +439,22 @@ p {
     align-items: center;
     justify-content: center;
   }
-  
+
+  .historyStartImg img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    background-color: #fff;
+    padding: 0.5rem;
+    margin: 0 0em 0rem 0;
+    border: 1px solid #b8b8b8;
+  }
+
   .intro img {
-  width: 456px;
-  margin-left: 0;
+    width: 456px;
+    margin-left: 0;
   }
 
   .history div {
@@ -415,8 +466,25 @@ p {
   .format img {
     width: 300px;
   }
-  
+
   .brazilIntro {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image2 {
+    max-width: 500px;
+    margin: 2rem 0 2rem 0rem;
+    border: 1px solid #b8b8b8;
+    padding: 0.5rem;
+  }
+
+  .brazilIntro img {
+    width: 300px;
+    height: 500px;
+    margin: 0 0 2rem 0rem;
+    border: 1px solid #b8b8b8;
+    padding: 0.5rem;
   }
 }
